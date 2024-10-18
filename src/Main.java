@@ -4,7 +4,7 @@ public class Main {
 
         System.out.println("Задача 1");
         System.out.println("---------------------------------------");
-        int myArray[] = {2, 3, 4, 5, 6, 7, 8};
+        int myArray[] = {1, 2, 3, 4, 5};
         int sum = 0;
         for (int i = 0; i < myArray.length; i++) {
             sum = sum + myArray[i];
@@ -35,7 +35,7 @@ public class Main {
         System.out.println("---------------------------------------");
         double [] myArrayAverage = {12321, 23, 132, 12, 321233};
         int b = 0;
-        int weeks = 4;
+        int weeks = myArrayAverage.length;
         int c = 0;
         while (b <= myArrayAverage.length - 1) {
             c += c + myArrayAverage[b];
@@ -47,7 +47,11 @@ public class Main {
 
         System.out.println("Задача 4");
         System.out.println("---------------------------------------");
-
-
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int l = reverseFullName.length;
+        while (l > 0) {
+            l--;
+            System.out.print(reverseFullName[l]);
+        }
     }
 }
